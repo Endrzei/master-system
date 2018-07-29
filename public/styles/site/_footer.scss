@@ -1,0 +1,30 @@
+#footer{  
+    .footer-copyright{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+        margin: 4vw 0 2vw 0;
+
+        p {
+            font-size: 1em;
+            letter-spacing: 2px;
+            color: black;
+
+            .footer-heart {
+                color: red;
+                font-size: 1.35vw;
+            }
+
+            .footer-link {
+                letter-spacing: 3px;
+                text-decoration: none;
+                color: blue;
+            }
+            .footer-link:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
