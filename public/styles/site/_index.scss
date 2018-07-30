@@ -1,7 +1,7 @@
 
 .section {
-    margin-left: -1%;
     width: 100vw;
+  	margin-top: 10%;
 
     .section-container {
         display: flex;
@@ -38,9 +38,10 @@
             margin: 5% 10% 5% 10%;
             
             .section-text{
-                font-size: 1.7em;
+                font-size: 1.5em;
                 letter-spacing: 1px;
                 text-align: justify;
+			  	line-height: 125%;
             }
             hr {
 
@@ -48,7 +49,7 @@
                 margin-right: 30%;
                 width: 70%;
                 border: none;
-                border-bottom: 0.5em solid red;
+                border-bottom: 0.35em solid red;
 
             }
             .hr-blue{

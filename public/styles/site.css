@@ -77,8 +77,8 @@ body {
   height: auto; }
 
 .section {
-  margin-left: -1%;
-  width: 100vw; }
+  width: 100vw;
+  margin-top: 10%; }
   .section .section-container {
     display: flex;
     flex-direction: column;
@@ -107,15 +107,16 @@ body {
       width: 60%;
       margin: 5% 10% 5% 10%; }
       .section .section-container .section-text-container .section-text {
-        font-size: 1.7em;
+        font-size: 1.5em;
         letter-spacing: 1px;
-        text-align: justify; }
+        text-align: justify;
+        line-height: 125%; }
       .section .section-container .section-text-container hr {
         margin-top: 5%;
         margin-right: 30%;
         width: 70%;
         border: none;
-        border-bottom: 0.5em solid red; }
+        border-bottom: 0.35em solid red; }
       .section .section-container .section-text-container .hr-blue {
         border-color: blue;
         margin-left: 30%;
