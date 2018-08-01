@@ -166,6 +166,13 @@ body {
             line-height: 2em; }
           .section .section-container .section-text-container .contact-info .contact-item .contact-data span {
             line-height: 2em; }
+      .section .section-container .section-text-container .implementations-container .implementation .implementation-images-container .implementation-image-hidden {
+        display: none; }
+      .section .section-container .section-text-container .implementations-ifnone {
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        text-align: justify;
+        line-height: 125%; }
     .section .section-container .section-text-container-reverse {
       align-self: flex-end;
       align-items: flex-end; }
