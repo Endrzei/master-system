@@ -84,6 +84,28 @@ body {
     flex-direction: column;
     width: 100%;
     margin: none; }
+    .section .section-container .implementations-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 5%; }
+      .section .section-container .implementations-container .implementation {
+        width: 33.333vw; }
+        .section .section-container .implementations-container .implementation .implementation-subtitle {
+          text-align: center;
+          text-transform: uppercase;
+          margin-top: 3%;
+          font-size: 1.2em;
+          letter-spacing: 2px; }
+        .section .section-container .implementations-container .implementation .implementation-images-container .implementation-image {
+          object-fit: cover;
+          width: 100%; }
+        .section .section-container .implementations-container .implementation .implementation-images-container .implementation-image-hidden {
+          display: none; }
+    .section .section-container .implementations-ifnone {
+      font-size: 1.5em;
+      letter-spacing: 1px;
+      text-align: justify;
+      line-height: 125%; }
     .section .section-container .section-heading-container {
       display: flex;
       flex-direction: column;
@@ -166,13 +188,6 @@ body {
             line-height: 2em; }
           .section .section-container .section-text-container .contact-info .contact-item .contact-data span {
             line-height: 2em; }
-      .section .section-container .section-text-container .implementations-container .implementation .implementation-images-container .implementation-image-hidden {
-        display: none; }
-      .section .section-container .section-text-container .implementations-ifnone {
-        font-size: 1.5em;
-        letter-spacing: 1px;
-        text-align: justify;
-        line-height: 125%; }
     .section .section-container .section-text-container-reverse {
       align-self: flex-end;
       align-items: flex-end; }

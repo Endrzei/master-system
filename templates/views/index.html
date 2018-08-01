@@ -34,36 +34,34 @@
         <div class="section-heading-container section-heading-container-reverse">
             <h1 class="section-heading">REALIZACJE</h1>
         </div>
-        <div class="section-text-container section-text-container-reverse">
 			
-			{% if galleries.length %}
-			<div class="implementations-container">
-				{% for gallery in galleries %}
-				<div class="implementation">
-					<h2 class="implementation-subtitle">{{ gallery.name }}</h2>
-
-					<div id="gallery{{loop.index}}" class="lightgallery implementation-images-container">
-						{% for image in gallery.images.slice(0, 1) %}
-						<a href="{{ image.limit(1920,1080) }}">
-							<img src="{{ image.limit(400,400) }}" class="implementation-image">
-						</a>
-						{% endfor %}
-						{% for image in gallery.images.slice(1, gallery.images.length) %}
-						<a href="{{ image.limit(1920,1080) }}" class="implementation-image-hidden">
-							<img src="{{ image.limit(400,400) }}">
-						</a>
-						{% endfor %}
-					</div>
+		{% if galleries.length %}
+		<div class="implementations-container">
+			{% for gallery in galleries %}
+			<div class="implementation">
+				<div id="gallery{{loop.index}}" class="implementation-images-container">
+					{% for image in gallery.images.slice(0, 1) %}
+					<a href="{{ image.limit(1920,1080) }}">
+						<img src="{{ image.limit(400,400) }}" class="implementation-image">
+					</a>
+					{% endfor %}
+					{% for image in gallery.images.slice(1, gallery.images.length) %}
+					<a href="{{ image.limit(1920,1080) }}" class="implementation-image-hidden">
+						<img src="{{ image.limit(400,400) }}">
+					</a>
+					{% endfor %}
 				</div>
-				{% endfor %}
+				<h2 class="implementation-subtitle">{{ gallery.name }}</h2>
 			</div>
-			{% else %}
-			<h3 class="implementations-ifnone">Realizacje zostaną wkrótce dodane</h3>
-			{% endif %}
+			{% endfor %}
+		</div>
+		{% else %}
+		<h3 class="implementations-ifnone">Realizacje zostaną wkrótce dodane</h3>
+		{% endif %}
 
-
+		<div class="section-text-container section-text-container-reverse">
 			<hr class="hr-blue">
-        </div>
+		</div>
     </div>
 </div>
 <div class="section" id="about-2">
