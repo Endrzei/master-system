@@ -89,7 +89,8 @@ body {
       flex-direction: row;
       margin-top: 5%; }
       .section .section-container .implementations-container .implementation {
-        width: 33.333vw; }
+        width: 33.333vw;
+        transition: 0.5s; }
         .section .section-container .implementations-container .implementation .implementation-subtitle {
           text-align: center;
           text-transform: uppercase;
@@ -101,6 +102,8 @@ body {
           width: 100%; }
         .section .section-container .implementations-container .implementation .implementation-images-container .implementation-image-hidden {
           display: none; }
+      .section .section-container .implementations-container .implementation:hover {
+        transform: scale(1.2); }
     .section .section-container .implementations-ifnone {
       font-size: 1.5em;
       letter-spacing: 1px;
@@ -113,12 +116,12 @@ body {
       align-items: center;
       align-self: flex-end;
       margin: 5% 0 5% 0;
-      width: 70%;
-      height: 6em;
+      width: 60%;
+      height: 5em;
       text-align: center;
       box-shadow: 1px 1px 20px #cdcdcd; }
       .section .section-container .section-heading-container .section-heading {
-        font-size: 3em;
+        font-size: 2.5em;
         letter-spacing: 8px; }
     .section .section-container .section-heading-container-reverse {
       align-self: flex-start; }
@@ -126,10 +129,10 @@ body {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      width: 60%;
+      width: 55%;
       margin: 5% 10% 5% 10%; }
       .section .section-container .section-text-container .section-text {
-        font-size: 1.5em;
+        font-size: 1.3em;
         letter-spacing: 1px;
         text-align: justify;
         line-height: 125%; }
@@ -140,7 +143,7 @@ body {
         border: none;
         border-bottom: 0.35em solid red; }
       .section .section-container .section-text-container .hr-blue {
-        border-color: blue;
+        border-color: #0D60A4;
         margin-left: 30%;
         margin-right: 0; }
       .section .section-container .section-text-container .temporary-logo {
@@ -152,9 +155,9 @@ body {
           margin: none;
           padding: none; }
         .section .section-container .section-text-container .temporary-logo .red {
-          color: red; }
+          color: #FE322E; }
         .section .section-container .section-text-container .temporary-logo .blue {
-          color: blue; }
+          color: #0D60A4; }
       .section .section-container .section-text-container .contact-info {
         display: flex;
         flex-direction: column;
@@ -205,7 +208,8 @@ body {
     width: 45.5vw;
     height: 6vw;
     background-color: white;
-    box-shadow: 1px 1px 20px #888; }
+    box-shadow: 1px 1px 20px #888;
+    cursor: pointer; }
     .header .logo-bar .temporary-logo {
       font-weight: 700;
       font-size: 3.5em; }
@@ -213,9 +217,9 @@ body {
         margin: none;
         padding: none; }
       .header .logo-bar .temporary-logo .red {
-        color: red; }
+        color: #FE322E; }
       .header .logo-bar .temporary-logo .blue {
-        color: blue; }
+        color: #0D60A4; }
   .header .header-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -233,7 +237,9 @@ body {
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      transition: 0.5s;
+      cursor: pointer; }
       .header .header-container .header-item-container .overflow-hidden {
         height: 100%;
         width: 100%;
@@ -258,11 +264,13 @@ body {
         height: 100%;
         background-color: rgba(2, 23, 35, 0.2); }
         .header .header-container .header-item-container .heading-container h3 {
-          font-size: 1.8em;
+          font-size: 2em;
           letter-spacing: 0.25em; }
           .header .header-container .header-item-container .heading-container h3 a {
             text-decoration: none;
             color: white; }
+    .header .header-container .header-item-container:hover {
+      transform: scale(1.05); }
 
 #footer .footer-copyright {
   display: flex;
@@ -276,11 +284,41 @@ body {
     letter-spacing: 2px;
     color: black; }
     #footer .footer-copyright p .footer-heart {
-      color: red;
+      color: #FE322E;
       font-size: 1.35vw; }
     #footer .footer-copyright p .footer-link {
       letter-spacing: 3px;
       text-decoration: none;
-      color: blue; }
+      color: #0D60A4; }
     #footer .footer-copyright p .footer-link:hover {
       text-decoration: underline; }
+
+.gallery {
+  margin-top: 5%;
+  margin-bottom: 10%; }
+  .gallery .implementations-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .gallery .implementations-container .implementation {
+      width: 40%;
+      margin-top: 10%;
+      transition: 0.5s; }
+      .gallery .implementations-container .implementation .implementation-images-container .implementation-image {
+        width: 100%; }
+      .gallery .implementations-container .implementation .implementation-images-container .implementation-image-hidden {
+        display: none; }
+      .gallery .implementations-container .implementation .implementation-line {
+        margin: 5% auto 0 auto;
+        border: none;
+        border-bottom: 3px solid #0D60A4;
+        width: 50%; }
+      .gallery .implementations-container .implementation .implementation-title {
+        margin-top: 5%;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center; }
+    .gallery .implementations-container .implementation:hover {
+      transform: scale(1.15); }

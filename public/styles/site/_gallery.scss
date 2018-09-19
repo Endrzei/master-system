@@ -1,0 +1,41 @@
+.gallery {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  .implementations-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	.implementation {
+	  width: 40%;
+	  margin-top: 10%;
+	  transition: 0.5s;
+	  .implementation-images-container {
+
+		.implementation-image {
+		  width: 100%;
+		}
+		.implementation-image-hidden {
+		  display: none;
+		}
+	  }
+	  .implementation-line {
+		margin: 5% auto 0 auto;
+		border: none;
+		border-bottom: 3px solid $blue-light;
+		width: 50%;
+	  }
+	  .implementation-title {
+		margin-top: 5%;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-align: center;
+	  }
+	}
+	
+	.implementation:hover {
+	  transform: scale(1.15);
+	}
+  }
+}

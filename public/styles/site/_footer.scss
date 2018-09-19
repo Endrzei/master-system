@@ -13,14 +13,14 @@
             color: black;
 
             .footer-heart {
-                color: red;
+                color: $red;
                 font-size: 1.35vw;
             }
 
             .footer-link {
                 letter-spacing: 3px;
                 text-decoration: none;
-                color: blue;
+                color: $blue-light;
             }
             .footer-link:hover{
                 text-decoration: underline;
