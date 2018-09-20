@@ -293,6 +293,17 @@ body {
     #footer .footer-copyright p .footer-link:hover {
       text-decoration: underline; }
 
+@media screen and (max-width: 800px) {
+  #footer .footer-copyright {
+    flex-direction: column;
+    align-items: center; }
+    #footer .footer-copyright p {
+      text-align: center;
+      margin-top: 5%;
+      line-height: 150%; }
+      #footer .footer-copyright p .footer-heart {
+        font-size: 1em; } }
+
 .gallery {
   margin-top: 5%;
   margin-bottom: 10%; }
