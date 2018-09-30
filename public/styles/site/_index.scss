@@ -167,3 +167,103 @@
         }
     }
 }
+@media screen and (max-width: 800px) {
+    .section{
+
+        .section-container{
+
+            .section-heading-container{
+                margin: 0 0 5% 0;
+                width: 80%;
+                height: 4em;
+                
+
+                .section-heading{
+                    font-size: 2em;
+                    letter-spacing: 4px;
+                }
+            }
+            .section-text-container{
+                width: 80%;
+                
+                hr {
+
+                    margin-top: 15%;
+                    margin-right: 10%;
+                    width: 80%;
+
+                }
+                .temporary-logo{
+                    font-size: 2.5em;
+                    align-self: flex-end;
+                    margin-bottom: 5%;
+
+                    span{
+                        margin: none;
+                        padding: none;
+
+                    }
+                    .red {
+                        color: $red;
+                    }
+
+                    .blue{
+                        color: $blue-light;
+                    }
+                }
+                .contact-info{
+
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 2em;
+                    text-align: right;
+                    width: 100%;
+
+                    .contact-item{
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-top: 2%;
+                        font-size: 0.6em;
+                        box-shadow: 1px 1px 1px #ddd;
+                        padding: 3%;
+                        
+
+                        .contact-title{ 
+                            margin-right: 1%;
+                            font-weight: 700;
+                            line-height: 2em;
+                            text-align: left;
+                        }
+                        .contact-data{
+
+                            span{
+                                line-height: 2em;
+                                font-size: 0.9em;
+                            }
+                        }
+                    }
+                    /*.contact-item:after{
+                        position: absolute;
+                        bottom: -0.25em;
+                        left: 40%;
+                        content:"";
+                        width: 60%;
+                        z-index: 0;
+                        border: 1px solid rgba(255, 0, 0, 0.4);
+                    }
+                    .contact-item-noborder:after{
+                        border: none;
+                    }*/
+                }
+            
+            }
+        
+            .section-text-container-reverse{
+                align-self: flex-end;
+                align-items: flex-end;
+            }
+        }
+    }
+}
