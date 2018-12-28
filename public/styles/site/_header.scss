@@ -56,6 +56,7 @@
             align-items: center;
             width:100%;
             height: 100%;
+		  	transition: 0.5s;
 		  	cursor: pointer;
 
             .overflow-hidden{
@@ -66,19 +67,19 @@
                 .header-small-photo{
                     height: 100%;
                     width: 100%;
-                    filter: blur(0.1vw);
-				  	transition: 0.5s ease;
-				  	transform: scale(1.05);
+                    filter: blur(0.1vw) ;
                 }
 
-                .header-realizacje{
+                .header-realizacje{                   
                     background-image: url("/images/tile2.jpg");
-                    background-size: 50vw, cover;
+                    background-size: 65vw, cover;
+                    background-position: -9vw -9vw ;
                     
                 }
                 .header-kontakt{
                     background-image: url("/images/tile3.jpg");
-                    background-size: 50vw, cover;
+                    background-size: 60vw, cover;
+                    background-position: center -2vw;
                 }
             }
             
@@ -100,17 +101,12 @@
                         text-decoration: none;
                         color: white;
                     }
-				  
                 }
             }
         }
-
-	  .header-item-container:hover{
-		.overflow-hidden {
-		  .header-small-photo {
-			transform: scale(1.25);
-		  }
-		}
+	  
+	  .header-item-container:hover {
+		transform: scale(1.05);
 	  }
         
     }
