@@ -302,7 +302,6 @@ body {
       align-items: center;
       width: 100%;
       height: 100%;
-      transition: 0.5s;
       cursor: pointer; }
       .header .header-container .header-item-container .overflow-hidden {
         height: 100%;
@@ -311,7 +310,9 @@ body {
         .header .header-container .header-item-container .overflow-hidden .header-small-photo {
           height: 100%;
           width: 100%;
-          filter: blur(0.1vw); }
+          filter: blur(0.1vw);
+          transition: 0.5s ease;
+          transform: scale(1.05); }
         .header .header-container .header-item-container .overflow-hidden .header-realizacje {
           background-image: url("/images/tile2.jpg");
           background-size: 65vw, cover;
@@ -335,8 +336,8 @@ body {
           .header .header-container .header-item-container .heading-container h3 a {
             text-decoration: none;
             color: white; }
-    .header .header-container .header-item-container:hover {
-      transform: scale(1.05); }
+    .header .header-container .header-item-container:hover .overflow-hidden .header-small-photo {
+      transform: scale(1.25); }
 
 @media screen and (max-width: 800px) {
   .header {
