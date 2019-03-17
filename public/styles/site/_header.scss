@@ -9,31 +9,15 @@
         justify-content: center;
         align-items: center;
         top: 5vw;
-        width: 45.5vw;
-        height: 6vw;
+        width: 40vw;
+        height: 9vw;
         background-color: white;
         box-shadow: 1px 1px 20px #888;
 	  	cursor: pointer;
 
-        .temporary-logo{
-                font-weight: 700;
-                font-size: 3.5em;
-                
-                
-
-                span{
-                    margin: none;
-                    padding: none;
-
-                }
-                .red {
-                    color: $red;
-                }
-
-                .blue{
-                    color: $blue-light;
-                }
-        }
+        .logo-image {
+		  height: 90%;
+		}
     }
 
     .header-container{
@@ -126,33 +110,15 @@
             justify-content: center;
             align-items: center;
             top: 10vw;
-            left: -2vw;
-            width: 90vw;
-            height: 12vw;
+            width: 80vw;
+            height: 17vw;
             background-color: white;
             box-shadow: 1px 1px 20px #888;
               cursor: pointer;
     
-            .temporary-logo{
-                    font-weight: 700;
-                    font-size: 2.5em;
-                    
-                    
-    
-                    span{
-                        margin: none;
-                        margin-left: 3vw;
-                        padding: none;
-    
-                    }
-                    .red {
-                        color: $red;
-                    }
-    
-                    .blue{
-                        color: $blue-light;
-                    }
-            }
+            .logo-image {
+			  
+			}
         }
 
         .header-container{
@@ -184,6 +150,7 @@
                         height: 100%;
                         width: 100%;
                         filter: blur(0.1vw);
+						transform: scale(1.2);
                     }
     
                     .header-realizacje{

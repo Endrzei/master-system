@@ -146,18 +146,12 @@ body {
         border-color: #0D60A4;
         margin-left: 30%;
         margin-right: 0; }
-      .section .section-container .section-text-container .temporary-logo {
-        font-weight: 700;
-        font-size: 4em;
+      .section .section-container .section-text-container .contact-logo {
+        width: 68%;
         align-self: flex-end;
         margin-bottom: 5%; }
-        .section .section-container .section-text-container .temporary-logo span {
-          margin: none;
-          padding: none; }
-        .section .section-container .section-text-container .temporary-logo .red {
-          color: #FE322E; }
-        .section .section-container .section-text-container .temporary-logo .blue {
-          color: #0D60A4; }
+        .section .section-container .section-text-container .contact-logo .contact-logo-image {
+          height: 100%; }
       .section .section-container .section-text-container .contact-info {
         display: flex;
         flex-direction: column;
@@ -196,8 +190,13 @@ body {
       align-items: flex-end; }
 
 @media screen and (max-width: 800px) {
+  .section .section-container .implementations-container {
+    flex-direction: column; }
+    .section .section-container .implementations-container .implementation {
+      width: 88%;
+      margin: 7% auto; }
   .section .section-container .section-heading-container {
-    margin: 0 0 5% 0;
+    margin: 10% 0 10% 0;
     width: 80%;
     height: 4em; }
     .section .section-container .section-heading-container .section-heading {
@@ -207,19 +206,13 @@ body {
     width: 80%; }
     .section .section-container .section-text-container hr {
       margin-top: 15%;
-      margin-right: 10%;
       width: 80%; }
-    .section .section-container .section-text-container .temporary-logo {
-      font-size: 2.5em;
-      align-self: flex-end;
-      margin-bottom: 5%; }
-      .section .section-container .section-text-container .temporary-logo span {
-        margin: none;
-        padding: none; }
-      .section .section-container .section-text-container .temporary-logo .red {
-        color: #FE322E; }
-      .section .section-container .section-text-container .temporary-logo .blue {
-        color: #0D60A4; }
+    .section .section-container .section-text-container .contact-logo {
+      width: 100%;
+      align-self: center;
+      margin: 7% auto; }
+      .section .section-container .section-text-container .contact-logo .contact-logo-image {
+        height: 100%; }
     .section .section-container .section-text-container .contact-info {
       display: flex;
       flex-direction: column;
@@ -269,21 +262,13 @@ body {
     justify-content: center;
     align-items: center;
     top: 5vw;
-    width: 45.5vw;
-    height: 6vw;
+    width: 40vw;
+    height: 9vw;
     background-color: white;
     box-shadow: 1px 1px 20px #888;
     cursor: pointer; }
-    .header .logo-bar .temporary-logo {
-      font-weight: 700;
-      font-size: 3.5em; }
-      .header .logo-bar .temporary-logo span {
-        margin: none;
-        padding: none; }
-      .header .logo-bar .temporary-logo .red {
-        color: #FE322E; }
-      .header .logo-bar .temporary-logo .blue {
-        color: #0D60A4; }
+    .header .logo-bar .logo-image {
+      height: 90%; }
   .header .header-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -348,23 +333,11 @@ body {
       justify-content: center;
       align-items: center;
       top: 10vw;
-      left: -2vw;
-      width: 90vw;
-      height: 12vw;
+      width: 80vw;
+      height: 17vw;
       background-color: white;
       box-shadow: 1px 1px 20px #888;
       cursor: pointer; }
-      .header .logo-bar .temporary-logo {
-        font-weight: 700;
-        font-size: 2.5em; }
-        .header .logo-bar .temporary-logo span {
-          margin: none;
-          margin-left: 3vw;
-          padding: none; }
-        .header .logo-bar .temporary-logo .red {
-          color: #FE322E; }
-        .header .logo-bar .temporary-logo .blue {
-          color: #0D60A4; }
     .header .header-container {
       grid-template-rows: 65% 35%;
       grid-template-columns: 1fr 1fr; }
@@ -390,7 +363,8 @@ body {
           .header .header-container .header-item-container .overflow-hidden .header-small-photo {
             height: 100%;
             width: 100%;
-            filter: blur(0.1vw); }
+            filter: blur(0.1vw);
+            transform: scale(1.2); }
           .header .header-container .header-item-container .overflow-hidden .header-realizacje {
             background-image: url("/images/tile2.jpg");
             background-size: 70vw, cover; }
