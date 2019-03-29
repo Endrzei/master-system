@@ -107,8 +107,10 @@ body {
     .section .section-container .implementations-ifnone {
       font-size: 1.5em;
       letter-spacing: 1px;
-      text-align: justify;
-      line-height: 125%; }
+      text-align: center;
+      line-height: 125%;
+      width: 80%;
+      margin: 10% auto; }
     .section .section-container .section-heading-container {
       display: flex;
       flex-direction: column;
@@ -132,7 +134,7 @@ body {
       width: 55%;
       margin: 5% 10% 5% 10%; }
       .section .section-container .section-text-container .section-text {
-        font-size: 1.5em;
+        font-size: 1.35em;
         letter-spacing: 1px;
         text-align: justify;
         line-height: 125%; }
@@ -204,6 +206,10 @@ body {
       letter-spacing: 4px; }
   .section .section-container .section-text-container {
     width: 80%; }
+    .section .section-container .section-text-container .section-text {
+      font-size: 1.15em;
+      line-height: 125%;
+      letter-spacing: 1px; }
     .section .section-container .section-text-container hr {
       margin-top: 15%;
       width: 80%; }
